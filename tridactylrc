@@ -1,0 +1,21 @@
+" vim: filetype=vim
+set newtab about:blank
+set smoothscroll true
+
+bind ,<Space> nohlsearch
+bind / fillcmdline find
+bind ? fillcmdline find -?
+bind N findnext -1
+bind n findnext 1
+set findcase sensitive
+unbind <C-f>
+unbind <C-i>
+
+bind j scrollline 5
+bind k scrollline -5
+
+bind x tabclose
+
+autocmd DocStart .* mode ignore
+
+guiset_quiet hoverlink right
